@@ -1,0 +1,143 @@
+@font-face {
+  font-family: SnackerComic_PerosnalUseOnly;
+  src: url(SnackerComic_PerosnalUseOnly.ttf);
+}
+@font-face {
+  font-family: Engcomica;
+  src: url(Engcomica.otf);
+}
+
+*{
+    box-sizing: border-box;  
+  }
+
+  header{
+    position: sticky;
+    top: 10px;
+
+  }
+  
+  .imagen-banner{
+    width:100vw;    
+    height: 90px; 
+  }
+
+body{
+    background-color: rgb(8, 8, 32);    
+   
+}
+
+/* Navbar container */
+.navbar {
+    width: 100vw;
+    overflow: hidden;
+    background-color: #333;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
+  }
+  
+  /* Links inside the navbar */
+  .navbar a {
+    float: left;
+    display: block;
+    font-size: 16px;
+    color: rgb(197, 192, 192);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+    
+  /* The dropdown container */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: rgb(197, 192, 192);
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align */
+    margin: 0; /* Important for vertical align  */
+  }
+  
+  /* Add a red background color to navbar links on hover */
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(88, 82, 114);
+    color:rgb(199, 121, 5);
+    transition: all .2s;
+  }
+  
+  /* extraido de 3wschool*/
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #d4d3d3;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: rgb(197, 192, 192);
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .stcky {
+   position: fixed;
+   top: 0;
+   width: 100%;
+   padding-top:40px ;
+  }
+ 
+  
+  h1{
+    font-family: Engcomica;
+    color:red;
+    text-align: center; 
+    font-size: 60px; 
+    background-color:rgb(189, 188, 204);
+   }
+   p{
+    font-family: Engcomica;
+    text-align: center; 
+    font-size:30px;
+    background-color: white;
+
+     
+   }
+
+  section {
+    width: 100%;
+    height: 1400px;
+    background-image:url(img/fondo.jpg);     
+    float: left;
+    display: flex;    
+  
+    }
+  
+    aside {
+     width: 25%;
+     height: 400px;  
+     float: left;    
+    }
+
+
