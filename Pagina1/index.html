@@ -3,13 +3,14 @@
     <head>
         <meta charset="UTF-8">
         <title>EC Sol De plata</title>
-        <link href="style3.css" rel="stylesheet">        
+        <link href="style3.css" rel="stylesheet">  
+        <script src="index-1.js"></script>        
     </head>    
         <header>
           <img id="banner" src="img\BannerComic.png" class="imagen-banner" alt="Extracomic"height="60" width="300">
            <div class="navbar">
               <a href="#">Comic Desde Argentina</a>
-              <a href="#">Inicio</a>
+              <a href="../index.html">Inicio</a>
               <div class="dropdown">
                   <button class="dropbtn">Informacion
                       <i class=" fa fa-caret-down"></i>                  
@@ -38,7 +39,7 @@
                       <a href="#">Hijitus</a>
                       <a href="#">Nafta Super</a>
                       <a href="#">Nippur De Lagash</a>
-                      <a href="#">Paturuzu</a>
+                      <a href="../Pagina2/index2.html">Sol de Plata</a>
                   </div> 
               </div>    
               <div class="dropdown">
@@ -84,9 +85,9 @@
            </div>     
         </header>        
       
-    <body background ="img\fondofinal.png" alt="Silver" class="fondo-silver" width="1600" height="300">  
+    <body background ="img/86_o.jpg" alt="Silver" class="fondo-silver" width="1600" height="300">  
 
-        <div class="form-popup" id="myForm">
+        <!--<div class="form-popup" id="myForm">
             <form action="/action_page.php" class="form-container">
               <h1>Login</h1>
           
@@ -100,6 +101,73 @@
               <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
             </form>
           </div>
+        -->
+          <div id="myForm" class="form-popup">
+            <table align="center" border="5" width="75%" class="form-container"> 
+  
+              <tr> 
+              <td>   Nombre: <input type="text" name="nombre" maxlength="20">  
+                     Apellido: <input type="text" name="apellido" maxlength="20">  
+              </td>  
+              </tr>   
+              
+              <tr>  
+              <td>  Ciudad 
+                 <select name="ci" size="1">  
+                    <option value="1">  Gran Buenos Aires 
+                    <option value="2">  Capital Federal
+                    <option value="3">  Interior de Pais
+                    <option value="4">  Sudamerica
+                    <option value="5">  Otra 
+                </select>  
+              </td> 
+              </tr>   
+              
+              <tr>  
+              <td>  Intereses por : 
+                 <select name="serv" size="1">  
+                    <option value="1">  Colecciones
+                    <option value="2">  Ediciones Anteriores
+                    <option value="3">  Tirada Semanal
+                 </select> 
+              </td> 
+              </tr>   
+              
+              <tr>  
+              <td>  Area Especifica 
+                 <select name="ti" size="1">  
+                    <option value="1">  Personal
+                    <option value="2">  Empresarial 
+                    <option value="3">  Residencial  y Empresarial 
+                </select>  
+              <br/> 
+              </td>  
+              </tr>   
+              
+              <tr>
+              <td> Correo Electrónico:
+                    
+                    <input type="text" name="email" maxlength="30"> <br/> 
+              
+                    <font size="2"> Nota:La intención de solicitar su correo electrónico es
+                    <b>  solo </b> con el propósito de mantener la veracidad de esta lista, 
+                    en ninguna forma será publicado en esta lista o distribuido a terceros. </font>              
+              </td>  
+              </tr>  
+              
+              <tr> 
+              <td> 
+                   
+                   <input type="reset" value="Reiniciar"> 
+                   <input type="submit" value="Enviar"> 
+              
+              </td> 
+              </tr> 
+              
+              </table>  
+              </form>   
+          </div>
+  
 
 
 
