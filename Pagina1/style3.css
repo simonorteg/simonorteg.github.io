@@ -90,8 +90,7 @@ body{
   }
   
   .fondo-silver {        
-    background-size: cover;  
-    background-repeat:no-repeat;  
+    background-size:cover;     
     margin: 0;
     padding: 0;    
   }
@@ -108,59 +107,43 @@ body{
     right: 20px;
     width: 280px;
   }
+  .container {
+   padding: 20px;
+   display: flex;
+   flex-direction:row;
+  }
 
-  .form-container {
+  .form-contens {
     max-width: 600px;
-    padding: 10px;
-    background-color: white;
+    padding: 20px;
+    margin-top: 5px;
+    background-color: rgb(188, 182, 224);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   }
 
   .form-popup {    
     position:fixed;  
-    bottom: 15;
-    right: 30px;    
+    bottom: 20;
+    right: 20px;    
     z-index: 9;
   }
 
-  .form-container input[type=text], .form-container input[type=password] {
+  .form-container input[type=text]{
     width: 100%;
     padding: 15px;
     margin: 5px 0 22px 0;
     border: none;
-    background: #f1f1f1;
-  }
-
-  .form-container input[type=text]:focus, .form-container input[type=password]:focus {
-    background-color: #ddd;
-    outline: none;
-  }
-
-  .form-container .btn {
-    background-color: #04AA6D;
-    color: white;
-    padding: 16px 20px;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    margin-bottom:10px;
-    opacity: 0.8;
-  }
+    background: #b8acac;
+  }  
   
-  /* Add a red background color to the cancel button */
-  .form-container .cancel {
-    background-color: red;
-  }
   
-  /* Add some hover effects to buttons */
-  .form-container .btn:hover, .open-button:hover {
-    opacity: 1;
-  }
-
   table{
     background-color: antiquewhite;
     display: flexbox;
     align-content: center;
   }
+
+  
  
   
   
