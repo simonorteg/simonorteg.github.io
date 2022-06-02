@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <title>EC Sol De plata</title>
         <link href="style3.css" rel="stylesheet">  
-        <script src="Validacion.js"></script>        
+        <script type="text/javascript" src="Script0.js"></script>        
     </head>    
         <header>
           <img id="banner" src="img\BannerComic.png" class="imagen-banner" alt="Extracomic"height="60" width="300">
@@ -87,79 +87,98 @@
       
     <body background ="img/86_o.jpg" alt="Silver" class="fondo-silver" width="1600" height="300">  
 
-        <main class="container"> 
-            <div id="myForm" class="form-popup">
-                <form name="fvalidar" action="" method="get"> 
-                    <table align="center" border="5" width="80%" class="form-contens">         
-                        <tr> 
-                        <td>   Nombre: <input type="text" name="nombre" size="40" maxlength="100">  
-                               Apellido: <input type="text" name="apellido"size="40" maxlength="100">  
-                        </td>  
-                        </tr>                       
-                        <tr>  
-                        <td>  Ciudad: 
-                            <select name="ci" size="1">  
-                                <option value="1">  Gran Buenos Aires 
-                                <option value="2">  Capital Federal
-                                <option value="3">  Interior de Pais
-                                <option value="4">  Sudamerica
-                                <option value="5">  Otra 
-                            </select>  
-                        </td> 
-                        </tr>                    
-                        <tr>  
-                        <td>  Solicitud de : 
-                                <select name="serv" size="1">  
-                                    <option value="1">  Colecciones
-                                    <option value="2">  Ediciones Anteriores
-                                    <option value="3">  Tirada Semanal
-                                </select> 
-                        </td> 
-                        </tr>                       
-                        <tr>  
-                        <td>  Interes 
-                                <select name="ti" size="1">  
-                                    <option value="1">  Personal
-                                    <option value="2">  Empresarial 
-                                    <option value="3">  otros 
-                                </select>  
-                        <br/> 
-                        </td>  
-                        </tr>                       
-                        <tr>
-                        <td> Correo Electrónico:                            
-                                <input type="text" name="email" size="40" maxlength="100"> <br/>                  
-                                        
-                        </td>  
-                        </tr>                      
-                        <tr> 
-                        <td> 
-                            
-                            <input type="reset" value="Reiniciar"> 
-                            <input type="submit" onclick="return Validar()" value="Enviar"> 
-                        
-                        </td> 
-                        </tr> 
+        
+
+        <div class="container" >    
+            <div class="cont">
+
+            </div>    
+                    <div class="cont" >        
+                        <form onsubmit="enviar()" id="frm" name="frm">
+                            <label>Nombre</label>
+                            <input id="f_nombre" name="f_nombre" >
+                            <label>Edad</label>
+                            <input id="f_edad" name="f_edad" > 
+                            <label>Correo</label>                   
+                            <input id="f_correo" name="f_correo" >  
+                            <label for="ci"> Ciudad</label> 
+                                        <select name="ci" id="ci"> 
+                                            <option value="0" disabled selected>Elija una opcion</option> 
+                                            <option value="1">  Gran Buenos Aires </option>
+                                            <option value="2">  Capital Federal</option>
+                                            <option value="3">  Interior de Pais</option>
+                                            <option value="4">  Sudamerica</option>
+                                            <option value="5">  Otra </option>
+                                        </select>  
+                                                                          
+                             <label for="ti"> Interés</label> 
+                                        <select name="ti" id="ti"> 
+                                            <option value="0" disabled selected>Elija una opcion</option> 
+                                            <option value="1">  Personal
+                                            <option value="2">  Empresarial 
+                                            <option value="3">  otros 
+                                        </select> 
+                               <div id="b_radio" class="radio">
+                                <label> Pago </label>                              
+                                <input type="radio" name="tarjeta" value= "visa">Visa<br/>
+                                <input type="radio" name="tarjeta" value= "mastercard" >Mastercard <br/>
+                                <input type="radio" name="tarjeta" value= "paypal">Paypal <br/>
+                                <input type="radio" name="tarjeta" value= "otros" >otros<br/>   
+                             <div>
+                                <textarea id="f_comentarios" name="f_comentarios" rows="3" placeholder="comentario"></textarea>   
+                               
+                             </div>                         
+                            <div>
+                                <button id="boton">Enviar</button> 
+                                <button type="button" onclick="limpiar()" id="btn_limpiar">limpiar Lista</button>                              
+                            </div>                                         
+
+                        </form> 
+                    </div> 
+                <div class="cont">
                     
-                    </table>  
-                </form>   
-            </div>
-            <div>
+                    <ul id="ltaErrores">                    
+                    </ul> 
 
-            </div>  
-        </main> 
-
-
+                </div>                            
+               
+        </div>        
+        
 
 
 
+               
 
+                <script>                                 
+                
+                    function enviar(){
+                         
+                         if(validar()){
+                            let f_nombre = document.getElementById("f_nombre");
+                            let f_edad = document.querySelector("#f_edad");
+                            let f_correo = document.frm.f_correo;
+                            let tarjeta = document.frm.value.getElementById("b_radio");
+                            console.log(tarjeta);
+                            let ciudad = document.frm.ci.value;
+                            let interes = document.frm.ti.value; 
+                            let p = document.createElement("p");
+                            p.innerHTML =`${f_nombre.value} de ${f_edad.value} años(${f_correo.value}) Felicidades!! enviaste corectamente el formulario`;                            
+                            document.getElementById("Demo").appendChild(p).style.background="green";                        
+                            
+                         }
+                         return false;
 
-
-          
-
+                    }                              
+                </script>   
+                           
+                                 
+                                       
+             
 
         
+       
+               
+
     </body>
 
 </html>

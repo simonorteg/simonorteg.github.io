@@ -9,7 +9,7 @@
 
   header{
     position: sticky;
-    top: 10px;
+    top: 10px;   
 
   }
   
@@ -27,7 +27,8 @@ body{
 .navbar {
     overflow: hidden;
     background-color: #333;
-    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width:100vw; 
   }
   
   /* Links inside the navbar */
@@ -134,61 +135,37 @@ body{
   color:rgb(7, 26, 90);
   font-size: 20px;
 }
-/*
-.container {
-  position: relative;
-  overflow: hidden;
-  width: 10%;
-  padding-top: 15%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
-/*}
 
-/* Then style the iframe to fit in the container div with full height and width */
-/*.responsive-iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 15%;
-  height: 10%;
-}*/
-/*.container {
-  padding-top: 100%; /* 1:1 Aspect Ratio 
-}*/
+.seccion_footer{
+  background-color: #909daf;
+   font-family:SF Comic Script Extended;  
+   display: flex;
+   
+ }
+ ul{
+   list-style-type: none;
+ }
 
-form {
-  border: 4px solid #ebe8e8;
-}
 
-/* Add some padding and a grey background color to containers */
-.contenedor-noti {
-  padding: 10px;
-  background-color: #f1f1f1;
-}
-
-/* Style the input elements and the submit button */
-input[type=email], input[type=submit] {
-  width: 50%;
-  padding: 10px;
-  margin: 8px 0;
-  display:run-in;
-  border: 1px solid #ccc;
-  box-sizing:content-box;
-}
-
-/* Add margins to the checkbox */
-input[type=checkbox] {
-  margin-top: 16px;
+.text_info{
+  display: flex;
+  margin-left: 200px;
  
 }
-
-/* Style the submit button */
-input[type=submit] {
-  background-color: #182846;
-  color: white;
-  border: none;
+.contacto{
+  display: flex;
+  margin-left: 200px;
+ 
+  
+}
+.envios{
+  display: flex;
+  margin-left: 200px;
+  
 }
 
-input[type=submit]:hover {
-  opacity: 0.8;
-}
+
+
+
+
+

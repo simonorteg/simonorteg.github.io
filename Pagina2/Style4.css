@@ -9,15 +9,14 @@
 
 *{
     box-sizing: border-box;  
-  }
+}
 
-  header{
-    position: sticky;
-    top: 10px;
-
+header{
+  position: sticky;
+  top: 10px;
   }
   
-  .imagen-banner{
+.imagen-banner{
     width:100vw;    
     height: 90px; 
   }
@@ -32,64 +31,65 @@ body{
     width: 100vw;
     overflow: hidden;
     background-color: #333;
-    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
   }
   
   /* Links inside the navbar */
-  .navbar a {
-    float: left;
-    display: block;
-    font-size: 16px;
-    color: rgb(197, 192, 192);
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
+.navbar a {
+  float: left;
+  display: block;
+  font-size: 16px;
+  color: rgb(197, 192, 192);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
     
   /* The dropdown container */
-  .dropdown {
-    float: left;
-    overflow: hidden;
-  }
+.dropdown {
+  float: left;
+   overflow: hidden;
+}
   
   /* Dropdown button */
-  .dropdown .dropbtn {
-    font-size: 16px;
-    border: none;
-    outline: none;
-    color: rgb(197, 192, 192);
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit; /* Important for vertical align */
-    margin: 0; /* Important for vertical align  */
-  }
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: rgb(197, 192, 192);
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align */
+  margin: 0; /* Important for vertical align  */
+}
   
   /* Add a red background color to navbar links on hover */
-  .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: rgb(88, 82, 114);
-    color:rgb(199, 121, 5);
-    transition: all .2s;
-  }
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: rgb(88, 82, 114);
+  color:rgb(199, 121, 5);
+  transition: all .2s;
+}
   
   /* extraido de 3wschool*/
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #d4d3d3;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #d4d3d3;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
   
   /* Links inside the dropdown */
-  .dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
   
   /* Add a grey background color to dropdown links on hover */
   .dropdown-content a:hover {
@@ -99,14 +99,7 @@ body{
   /* Show the dropdown menu on hover */
   .dropdown:hover .dropdown-content {
     display: block;
-  }
-
-  .stcky {
-   position: fixed;
-   top: 0;
-   width: 100%;
-   padding-top:40px ;
-  }
+  } 
  
   
   h1{
@@ -116,30 +109,81 @@ body{
     font-size: 60px; 
     background-color:rgb(189, 188, 204);
    }
-   p{
+
+  p{
     font-family: Engcomica;
     text-align: center; 
     font-size:30px;
     background-color: white;
 
      
-   }
+  }
 
-  section {
-    width: 100%;
-    height: 1400px;
-    background-image:url(img/fondo.jpg);
-    background-repeat: repeat-y;
-    float: left;
-    display: flex;   
-  
-    }
+.secc-principal {
+      width: 100%;     
+      background-image: url(img/fondo.jpg);
+      background-repeat: repeat-y;
+       display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-content: center;
+      justify-content: center;
+      align-items: stretch;
+  }
   
     aside {
      width: 25%;
      height: 400px;  
      float: left;
       
-    }
+    } 
+    
+   #button-1{
+    background-color: grey;
+   } 
+   #button-2{
+    background-color: #2db61b;
+   }
+ 
+  .button {
+    display: inline-block;
+    border-radius: 4px;    
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 20px;
+  }
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  .button span:after {
+  content: '\00bb';  
+  position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  .button:hover span {
+    padding-right: 25px;
+  }
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+
+
+    
+
+
 
 

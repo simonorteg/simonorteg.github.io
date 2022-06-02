@@ -91,57 +91,46 @@ body{
   
   .fondo-silver {        
     background-size:cover;     
+    background-repeat: no-repeat;
     margin: 0;
-    padding: 0;    
+    padding: 0;   
+     
   }
-
-  .open-button {
-    background-color: #555;
-    color: white;
-    padding: 16px 20px;
-    border: none;
-    cursor: pointer;
-    opacity: 0.8;
-    position: fixed;
-    bottom: 23px;
-    right: 20px;
-    width: 280px;
-  }
-  .container {
-   padding: 20px;
+  
+ .container {
    display: flex;
-   flex-direction:row;
-  }
+   flex-direction: row;
+   
+ }
 
-  .form-contens {
-    max-width: 600px;
-    padding: 20px;
-    margin-top: 5px;
-    background-color: rgb(188, 182, 224);
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  }
+input, textarea, select{
+  width : 400px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #d4d3d3;
+}
 
-  .form-popup {    
-    position:fixed;  
-    bottom: 20;
-    right: 20px;    
-    z-index: 9;
-  }
-
-  .form-container input[type=text]{
-    width: 100%;
-    padding: 15px;
-    margin: 5px 0 22px 0;
-    border: none;
-    background: #b8acac;
-  }  
+form {
+  position : relative;
+  width  : 740px;
+  height : 498px;
+  margin : 0 auto;
+  padding: 1em;
+  box-sizing: border-box;  
+  /* creamos nuestra malla (grid) */
+  display  : grid;
+  grid-gap : 20px;
+  grid-template-columns : repeat(2, 1fr);
   
-  
-  table{
-    background-color: antiquewhite;
-    display: flexbox;
-    align-content: center;
-  }
+}
+label{
+  width: 40px;
+}
+.radio{
+  display:inherit;
+}
+ 
 
   
  
