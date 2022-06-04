@@ -41,9 +41,11 @@
                                 <option value="1">  Personal
                                 <option value="2">  Empresarial 
                                 <option value="3">  otros 
-                                </select>                             
-                            <button id="button-1" class="button">Enviar</button>                             
-                            <button onclick="location.href= '../Pagina2/index2.html'" id="button-2" class="button">Salir</button> 
+                                </select>  
+                                 <button id="button-1" class="button">Enviar</button> 
+                          <div class="login-button">                               
+                            <button onclick="location.href= '../Pagina2/index2.html'" id="button-2" class="button">Salir</button>                            
+                        </div>  
                             
                                      
                <div>                                                                                                            
@@ -67,8 +69,8 @@
                             let interes =  document.getElementById("ti");
                             let p = document.createElement("p");
                             p.innerHTML =`Felicidades!! ${f_nombre.value}  enviaste corectamente el formulario`;                            
-                            document.getElementById("ltaErrores").appendChild(p).style.background="black";                       
-                            
+                            document.getElementById("ltaErrores").appendChild(p).style.background="black";  
+                                                                        
                          }
                          return false;
 

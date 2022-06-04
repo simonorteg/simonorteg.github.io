@@ -99,7 +99,6 @@ function validar(){
             break;           
     
     }  */ 
-
     
     let ltaErrores_elem = document.querySelector("#ltaErrores");
     ltaErrores_elem.innerHTML='';
@@ -138,8 +137,14 @@ function validar(){
         principal.style.borderColor="#00ff00";  
   }}
   function limpiar(){
-    let ltaErrores_elem = document.querySelector("#ltaErrores");
-    ltaErrores_elem.innerHTML ="";
+    let inputs = document.querySelectorAll("input");
+   inputs ="";
+   
+    document.frm.ci.value="0";
+    document.frm.ti.value="0";
+    
+   
+    
 }
 
   
