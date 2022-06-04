@@ -1,100 +1,9 @@
 *{
     box-sizing: border-box;  
-  }
-
-  header{
-    position:sticky;
-    top: 10px;
-
-  }
+  } 
   
-  .imagen-banner{
-    width:100vw;    
-    height: 90px; 
-  }
-
-body{
-    background-color: rgb(8, 8, 32);    
-   
-}
-
-/* Navbar container */
-.navbar {
-    overflow: hidden;
-    background-color: #333;
-    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
-  }
-  
-  /* Links inside the navbar */
-  .navbar a {
-    float: left;
-    font-size: 16px;
-    color: rgb(197, 192, 192);
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  /* The dropdown container */
-  .dropdown {
-    float: left;
-    overflow: hidden;
-  }
-  
-  /* Dropdown button */
-  .dropdown .dropbtn {
-    font-size: 16px;
-    border: none;
-    outline: none;
-    color: rgb(197, 192, 192);
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit; /* Important for vertical align */
-    margin: 0; /* Important for vertical align  */
-  }
-
-   /* Add a red background color to navbar links on hover */
-   .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: rgb(88, 82, 114);
-    color:rgb(199, 121, 5);
-    transition: all .2s;
-  }
-  
-  /* extraido de 3wschool*/
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #d4d3d3;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-  
-  /* Add a grey background color to dropdown links on hover */
-  .dropdown-content a:hover {
-    background-color: rgb(197, 192, 192);
-  }
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  
-  .fondo-silver {        
-    background-size:cover;     
-    background-repeat: no-repeat;
-    margin: 0;
-    padding: 0;   
-     
+  body{
+    background-image: image();
   }
   
  .container {
@@ -103,7 +12,7 @@ body{
    
  }
 
-input, textarea, select{
+input, select{
   width : 400px;
   padding: 0;
   margin: 0;
@@ -113,26 +22,83 @@ input, textarea, select{
 
 form {
   position : relative;
-  width  : 740px;
-  height : 498px;
+  width  : 700px;
+  height : 400px;
   margin : 0 auto;
-  padding: 1em;
+  padding: 3em;
   box-sizing: border-box;  
   /* creamos nuestra malla (grid) */
   display  : grid;
   grid-gap : 20px;
   grid-template-columns : repeat(2, 1fr);
+  font-family: 'Anton', sans-serif;  
+  font-size: x-large;  
+  color: #c9c90c; 
   
 }
 label{
   width: 40px;
 }
-.radio{
-  display:inherit;
-}
- 
 
+.login-button{ 
+  flex-direction: column-reverse;
+  display: flex;  
+  margin-block: inherit;
+}
+body {
   
- 
-  
-  
+  background-image: url(https://www.todofondos.net/wp-content/uploads/black-panther-marvel-comics-fondo-de-pantalla-hd-1024x634.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+#button-1{
+  background-color: #238f83;
+ } 
+ #button-2{
+  background-color: #2d302f;
+ }
+
+.button {
+  display: inline-block;
+  border-radius: 4px;    
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 20px;
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.button span:after {
+content: '\00bb';  
+position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.button:hover span {
+  padding-right: 25px;
+}
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+#ltaErrores{
+  background-color: rgb(14, 13, 13);
+  font-family: 'Anton', sans-serif; 
+  color: rgb(20, 230, 30);
+  }
+
+
+

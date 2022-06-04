@@ -12,7 +12,7 @@
 }
 
 header{
-  position: sticky;
+  position:sticky;
   top: 10px;
   }
   
@@ -108,6 +108,7 @@ body{
     text-align: center; 
     font-size: 60px; 
     background-color:rgb(189, 188, 204);
+    margin: 10px;
    }
 
   p{
@@ -139,17 +140,14 @@ body{
     } 
     
    #button-1{
-    background-color: grey;
-   } 
-   #button-2{
-    background-color: #2db61b;
-   }
+    background-color: rgb(57, 131, 57);
+   }    
  
   .button {
     display: inline-block;
     border-radius: 4px;    
     border: none;
-    color: #FFFFFF;
+    color: #413e3e;
     text-align: center;
     font-size: 28px;
     padding: 20px;
