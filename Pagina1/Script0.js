@@ -52,53 +52,14 @@ function validar(){
         cambiarEstiloBordeCorreo(); 
     } 
 
-    if(+ciudad.value==0)
+    if(ciudad.value=="")
     errores.push("Debe ingresar una ciudad ");
 
-    if(+interes.value==0)
+    if(+interes.value=="")
     errores.push("Debe ingresar un Iterés ");
 
-    console.log(ciudad.value);
-   
+    console.log(ciudad.value);     
     
-
-    /*switch (+ciudad.value) {
-        case 0:
-            errores.push("Debe ingresar una ciudad ");
-            break;
-            case 1:
-                errores.push(`Ciudad Elegida : Gran Buenos Aires`)
-            break;
-            case 2:
-                errores.push(`Ciudad Elegida: Capital Federal `)
-            break;
-            case 3:
-                errores.push(`Ciudad Elegida: Interior de Pais`)
-            break;
-            case 4:
-                errores.push(`Ciudad Elegida: Sudamerica`)
-            break;
-            case 5:
-                errores.push(`Ciudad Elegida : Otra`)
-            break;           
-    
-    } 
-
-    switch (+interes.value) {
-        case 0:
-            errores.push("Debe ingresar un Interes")
-            break;
-            case 1:
-                errores.push(`Interes : Personal`)
-            break;
-            case 2:
-                errores.push(`Interes : Empresarial `)
-            break;
-            case 3:
-                errores.push(`Interes : Otro`)
-            break;           
-    
-    }  */ 
     
     let ltaErrores_elem = document.querySelector("#ltaErrores");
     ltaErrores_elem.innerHTML='';
@@ -136,19 +97,8 @@ function validar(){
     }else{
         principal.style.borderColor="#00ff00";  
   }}
-  function limpiar(){
-    let inputs = document.querySelectorAll("input");
-   inputs ="";
-   
-    document.frm.ci.value="0";
-    document.frm.ti.value="0";
-    
-   
-    
-}
-
   
 
   
 
-
+  

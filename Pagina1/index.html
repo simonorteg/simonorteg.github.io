@@ -27,40 +27,35 @@
 
                 <label for="ci"> Ciudad</label> 
                             <select name="ci" id="ci"> 
-                                <option value="0" disabled selected>Elija una opcion</option> 
-                                <option value="1">  Gran Buenos Aires </option>
-                                <option value="2">  Capital Federal</option>
-                                <option value="3">  Interior de Pais</option>
-                                <option value="4">  Sudamerica</option>
-                                <option value="5">  Otra </option>
+                                <option value="" disabled selected>Elija una opcion</option> 
+                                <option value="Gran Buenos Aires">  Gran Buenos Aires </option>
+                                <option value="Capital Federal">  Capital Federal</option>
+                                <option value="Interior de Pais">  Interior de Pais</option>
+                                <option value="Sudamerica">  Sudamerica</option>
+                                <option value="Otra">  Otra </option>
                             </select>  
                                                               
                  <label for="ti"> Interés</label> 
                             <select name="ti" id="ti"> 
-                                <option value="0" disabled selected>Elija una opcion</option> 
-                                <option value="1">  Personal
-                                <option value="2">  Empresarial 
-                                <option value="3">  otros 
+                                <option value="" disabled selected>Elija una opcion</option> 
+                                <option value="Personal">  Personal</option>
+                                <option value="Empresarial">  Empresarial </option>
+                                <option value="Otro">  Otro </option>
                                 </select>  
                                  <button id="button-1" class="button">Enviar</button> 
                           <div class="login-button">                               
                             <button onclick="location.href= '../Pagina2/index2.html'" id="button-2" class="button">Salir</button>                            
-                        </div>  
-                            
-                                     
+                        </div>                                      
                <div>                                                                                                            
-            </form>
-            
-        </div>   
-       </div>  
+            </form>            
+             </div>   
+        </div>  
        <div class="login-button">
         <ul id="ltaErrores">                          
         </ul> 
        </div>    
-                <script>                                 
-                
+                <script>                               
                     function enviar(event){
-                         
                          if(validar()){
                             let f_nombre = document.getElementById("f_nombre");
                             let f_edad = document.querySelector("#f_edad");
@@ -68,12 +63,11 @@
                             let ciudad = document.getElementById("ci");
                             let interes =  document.getElementById("ti");
                             let p = document.createElement("p");
-                            p.innerHTML =`Felicidades!! ${f_nombre.value}  enviaste corectamente el formulario`;                            
-                            document.getElementById("ltaErrores").appendChild(p).style.background="black";  
-                                                                        
+                            p.innerHTML =`Felicidades!!  Enviaste corectamente el formulario <br> Detalle:<br>Nombre:${f_nombre.value}<br> Edad: ${f_edad.value}<br> Correo: ${f_correo.value}<br>
+                            Ciudad: ${ci.value}<br>Interes: ${ti.value}`;                            
+                            document.getElementById("ltaErrores").appendChild(p).style.background="black";                                                                          
                          }
                          return false;
-
                     }                              
                 </script>               
                      
